@@ -1,0 +1,154 @@
+// import inuitcss
+@import "../inuitcss/style";
+
+//
+@import "fonts";
+
+/* ==========================================================================
+   Colors
+   http://sass-lang.com/docs/yardoc/Sass/Script/Functions.html
+   ========================================================================== */
+
+/*
+ * Main color
+ */
+
+$color-primary: #de4d43;
+
+/*
+ * lightned Main color <- wording? :X ...
+ * Background color
+ */
+
+$mainColorLightened: lighten($color-primary, 15%);
+
+/*
+ * Opposite main color
+ */
+
+$oppositeMainColor: invert($color-primary);
+
+/*
+
+Color Alterations
+
+Using color operators to perform calculations is helpful but can be a bit challenging as well. In this case color alterations may be a better option. Color alterations provide the ability to inverse colors, find complementary colors, mix colors together, or find the grayscale value of a color.
+
+color: invert(#8ec63f)
+color: complement(#8ec63f)
+color: mix(#8ec63f, #fff)
+color: mix(#8ec63f, #fff, 10%)
+color: grayscale(#8ec63f)
+
+HSLa Color Alterations
+
+HSLa color alterations take things a step further, adding in even more alterations.
+
+color: lighten(#8ec63f, 50%)
+color: darken(#8ec63f, 30%)
+color: saturate(#8ec63f, 75%)
+color: desaturate(#8ec63f, 25%)
+color: adjust-hue(#8ec63f, 30)
+color: adjust-hue(#8ec63f, -30)
+color: fade-in(rgba(142, 198, 63, 0), .4)
+color: fade-out(#8ec63f, .4)
+
+Color Manipulation
+
+Outside of altering colors Sass can also directly manipulate colors. Manipulating colors provides the most control over how to finely tune specific color properties. With this control also comes complexity, which is why color manipulations are a bit less common than color alterations.
+
+change-color() — Set any property of a color
+$color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha]
+
+adjust-color() — Incrementally manipulate any property of a color
+$color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha]
+
+scale-color() — Fluidly scale any percentage based on property of a color
+$color, [$red], [$green], [$blue], [$saturation], [$lightness], [$alpha]
+
+http://sassme.arc90.com/
+
+https://github.com/scottkellum/color-schemer
+
+*/
+
+
+
+/* ==========================================================================
+   Helper [classes]
+   ========================================================================== */
+
+/*
+ * Center
+ */
+
+.center {
+    margin: 0 auto;
+}
+
+/*
+ * Debug border
+ */
+
+.debug {
+    border: 1px solid red;
+}
+
+/*
+ * Main color background
+ */
+
+.main-color-background {
+    background-color: #caffa0;
+}
+
+/* link icon */
+a[target=_blank]:before {
+    font-family: 'ts1ce-icon-font';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    content: "\e001";
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+body {
+    color: $color-primary;
+    background-color: $mainColorLightened;
+}
+
+
+/*
+ * Content wrapper
+ */
+
+.content-wrapper {
+    width: 60%;
+    margin-top: 3%;
+}
+
+/*
+ * Color holder is just a container with dimensions to show result of color functions
+ */
+
+.color-holder {
+    width: 66%;
+    height: 120px;
+}
+
+/* ==========================================================================
+   Sass color function results
+   ========================================================================== */
+
+.sass-function-invert {
+    background-color: $oppositeMainColor;
+}
+
+.sass-function-mix {
+    background-color: mix($color-primary, $oppositeMainColor, 66%);
+}

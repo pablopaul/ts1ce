@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'ts1ce-icon-font';
+	src:url('../fonts/ts1ce-icon-font.eot');
+	src:url('../fonts/ts1ce-icon-font.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/ts1ce-icon-font.woff') format('woff'),
+	url('../fonts/ts1ce-icon-font.ttf') format('truetype'),
+	url('../fonts/ts1ce-icon-font.svg#ts1ce-icon-font') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+.icon-code:before, .icon-tag-stroke:before {
+	font-family: 'ts1ce-icon-font';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.icon-code:before {
+	content: "\e000";
+}
+.icon-tag-stroke:before {
+	content: "\e001";
+}
