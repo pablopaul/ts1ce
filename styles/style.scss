@@ -164,7 +164,7 @@ body {
 /*
  * primary brand color class
  */
-.color-brand-primary {
+.color-brand-primary-background {
   background-color: $color-brand-primary;
 }
 
@@ -194,4 +194,18 @@ body {
 
 .sass-function-mix {
     background-color: mix($color-brand-primary, $color-brand-primary-invert, 66%);
+}
+
+/* ==========================================================================
+   Buttons, uses inuitcss class names
+   ========================================================================== */
+
+.btn {
+    color: $color-brand-primary-invert;
+    background-color: $color-brand-primary;
+}
+
+.btn:hover {
+    color: $color-brand-primary;
+    background-color: $color-brand-primary-invert;
 }
