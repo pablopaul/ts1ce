@@ -13,19 +13,25 @@
  * primary brand color
  */
 
-$color-brand-primary: #de4d43;
+$color-brand-primary: #de2d23;
 
 /*
  * secondary brand color
  */
 
-$color-brand-secondary: #2366ab;
+$color-brand-secondary: #f5ca65;
 
 /*
  * lightened primary brand color
  */
 
-$color-brand-primary-lightened: lighten($color-brand-primary, 15%);
+$color-brand-primary-lightened: lighten($color-brand-primary, 25%);
+
+/*
+ * darkened primary brand color
+ */
+
+$color-brand-primary-darkened: darken($color-brand-primary, 25%);
 
 /*
  * opposite/invert primary brand color
@@ -102,7 +108,7 @@ https://github.com/scottkellum/color-schemer
  */
 
 .debug {
-    border: 1px solid red;
+    border: 1px solid black;
 }
 
 /* link icon */
@@ -142,6 +148,7 @@ body {
 .color-holder {
     width: 66%;
     height: 120px;
+    margin-bottom: 2rem;
 }
 
 /*
@@ -158,6 +165,13 @@ body {
   background-color: $color-brand-primary;
 }
 
+/*
+ * secondary brand color class
+ */
+.color-brand-secondary {
+  background-color: $color-brand-secondary;
+}
+
 
 /* ==========================================================================
    Sass color function results
@@ -165,6 +179,14 @@ body {
 
 .sass-function-invert {
     background-color: $color-brand-primary-invert;
+}
+
+.sass-function-lighten {
+    background-color: $color-brand-primary-lightened;
+}
+
+.sass-function-darken {
+    background-color: $color-brand-primary-darkened;
 }
 
 .sass-function-mix {
