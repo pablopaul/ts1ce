@@ -32,7 +32,7 @@
  *
  * LICENSE
  *
- * Copyright 2012 Harry Roberts
+ * Copyright 2013 Harry Roberts
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -46,7 +46,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Thank you for choosing inuit.css. May your floats remain cleared.
+ * Thank you for choosing inuit.css. May your web fonts render perfectly.
  */
 
 
@@ -73,7 +73,6 @@
  * SMALLPRINT..........Smaller text elements like `small`
  * QUOTES..............
  * CODE................
- * LINKS...............
  * LISTS...............
  * IMAGES..............
  * TABLES..............
@@ -98,12 +97,11 @@
  * ARROWS..............CSS arrows
  * SPRITE..............Generic spriting element
  * ICON-TEXT...........Icon and text couplings
- * BUTTONS.............
+ * BEAUTONS............Use the beautons micro library
  * LOZENGES............Basic lozenge styles
  * RULES...............Horizontal rules
  * STATS...............Simple stats object
  * GREYBOX.............Wireframing styles
- * BATCH...............Batch icon font
  *
  * WIDTHS..............Width classes for use alongside the grid system etc.
  * PUSH................Push classes for manipulating grids
@@ -143,68 +141,73 @@
 /**
  * Generic utility styles etc.
  */
-   @import "generic/mixins";
-   @import "generic/normalize";
-   @import "generic/reset";
-   @import "generic/clearfix";
-   @import "generic/shared";
+@import "defaults";
+@import "generic/mixins";
+@import "generic/normalize";
+@import "generic/reset";
+@import "generic/clearfix";
+@import "generic/shared";
+
+
+
 
 
 /**
  * Base styles; unclassed HTML elements etc.
  */
-   @import "base/main";
-   @import "base/headings";
-   @import "base/paragraphs";
-   @import "base/smallprint";
-   @import "base/quotes";
-   @import "base/code";
-   @import "base/links";
-   @import "base/images";
-   @import "base/lists";
-   @import "base/tables";
-   @import "base/forms";
+@import "base/main";
+@import "base/headings";
+@import "base/paragraphs";
+@import "base/smallprint";
+@import "base/quotes";
+@import "base/code";
+@import "base/images";
+@import "base/lists";
+@import "base/tables";
+@import "base/forms";
+
+
+
 
 
 /**
  * Objects and abstractions
- *
- * Single-line comment (//) out any objects you do not need in your project.
  */
-   @import "objects/grids";
-   @import "objects/flexbox";
-   @import "objects/columns";
-   @import "objects/nav";
-   @import "objects/options";
-   @import "objects/pagination";
-   @import "objects/breadcrumb";
-   @import "objects/media";
-   @import "objects/marginalia";
-   @import "objects/island";
-   @import "objects/block-list";
-   @import "objects/matrix";
-   @import "objects/split";
-// @import "example/unnecessary/file";
-   @import "objects/this-or-this";
-   @import "objects/link-complex";
-   @import "objects/flyout";
-   @import "objects/arrows";
-   @import "objects/sprite";
-   @import "objects/icon-text";
-   @import "objects/buttons";
-   @import "objects/lozenges";
-   @import "objects/rules";
-   @import "objects/stats";
-   @import "objects/greybox";
-   @import "objects/batch";
+@import "objects/grids";
+@import "objects/flexbox";
+@import "objects/columns";
+@import "objects/nav";
+@import "objects/options";
+@import "objects/pagination";
+@import "objects/breadcrumb";
+@import "objects/media";
+@import "objects/marginalia";
+@import "objects/island";
+@import "objects/block-list";
+@import "objects/matrix";
+@import "objects/split";
+@import "objects/this-or-this";
+@import "objects/link-complex";
+@import "objects/flyout";
+@import "objects/arrows";
+@import "objects/sprite";
+@import "objects/icon-text";
+@import "objects/beautons";
+@import "objects/lozenges";
+@import "objects/rules";
+@import "objects/stats";
+@import "objects/greybox";
+
+
+
 
 
 /**
  * Style trumps; helper and brand classes
  */
-   @import "generic/widths";
-   @import "generic/push";
-   @import "generic/pull";
-   @import "generic/brand";
-   @import "generic/helper";
-   @import "generic/debug";
+@import "generic/widths";
+@import "generic/push";
+@import "generic/pull";
+@import "generic/brand";
+@import "generic/helper";
+@import "generic/debug";
