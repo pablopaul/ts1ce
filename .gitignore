@@ -1,3 +1,4 @@
 .idea/
 styles/*.css
 styles/.sass-cache
+.DS_Store

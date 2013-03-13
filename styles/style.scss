@@ -1,3 +1,6 @@
+// set inuit settings, not sure if this is the right place, read more https://github.com/csswizardry/inuit.css#overriding-inuitcss-defaults
+$use-beautons: true;
+
 // import inuitcss
 @import "../inuitcss/style";
 
